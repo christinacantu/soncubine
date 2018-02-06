@@ -1,0 +1,7 @@
+.hamburger {
+  display: block;
+
+  @media (min-width: 500px) { // Desktop
+    display: none;
+  }
+}
