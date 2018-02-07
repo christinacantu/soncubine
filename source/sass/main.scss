@@ -1,5 +1,12 @@
 @import 'reset';
+$small: 200px;
+$medium: 500px;
+$large: 800px;
 
 body {
   background-color: red;
+
+  @media (min-width: $medium) {
+
+  }
 }
