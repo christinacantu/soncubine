@@ -5,7 +5,8 @@ $large: 992px;
 $extra-large: 1200px;
 
 body {
-  background-color: salmon;
+  height: 100vh;
+  background: linear-gradient(134.9deg, #8338EC 0%, #F65510 96.04%, #FB5607 100%);
   font-family: 'Avenir', 'Helvetica', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -33,14 +34,18 @@ nav {
 
 main {
   text-align: center;
+  margin-top: 46px;
 
   h1 {
+    margin-bottom: 26px;
     font-size: 2.750em;  //44px
-    line-height: 2.750em;  //44px
+    line-height: 1;  //44px 1 * 2.750
   }
 
   p {
+    padding: 0 26px;
     font-size: 1.250em;  //20px
-    line-height: 1.625em; //26px
+    line-height: 1.30; //26px 20 * 1.30
+    opacity: 0.80;
   }
 }
