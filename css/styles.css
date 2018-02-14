@@ -47,24 +47,66 @@ body {
   font-weight: 300;
   color: #FFFFFF; }
 
+a {
+  text-decoration: none; }
+  a:link {
+    color: #FFFFFF; }
+  a:visited {
+    color: #FFFFFF; }
+  a:hover {
+    color: rgba(255, 255, 255, 0.7); }
+
 nav {
   position: relative;
-  text-align: center; }
+  text-align: center;
+  padding: 26px 26px 0; }
+  @media (min-width: 768px) {
+    nav {
+      display: flex;
+      align-items: center;
+      text-align: left; } }
 
 .logo {
-  margin-top: 26px; }
+  width: 65px; }
+  @media (min-width: 768px) {
+    .logo {
+      width: 45px;
+      margin-right: 26px; } }
 
 .hambuyga {
   position: fixed;
   top: 26px;
   right: 26px; }
+  @media (min-width: 768px) {
+    .hambuyga {
+      display: none; } }
 
 .navigation-lists {
   display: none; }
+  @media (min-width: 768px) {
+    .navigation-lists {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1; }
+      .navigation-lists .close {
+        display: none; }
+      .navigation-lists ul {
+        display: inline-flex; }
+        .navigation-lists ul li {
+          margin-right: 16px;
+          font-size: 0.875em;
+          line-height: 1; }
+        .navigation-lists ul:last-child li:last-child {
+          font-weight: 500; } }
 
 main {
   text-align: center;
-  margin-top: 46px; }
+  margin: 0 auto;
+  margin-top: 46px;
+  max-width: 550px; }
+  @media (min-width: 768px) {
+    main {
+      margin-top: 104px; } }
   main h1 {
     margin-bottom: 26px;
     font-size: 2.750em;
@@ -74,3 +116,6 @@ main {
     font-size: 1.250em;
     line-height: 1.30;
     opacity: 0.80; }
+    @media (min-width: 768px) {
+      main p {
+        padding: 0; } }
