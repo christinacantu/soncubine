@@ -42,5 +42,19 @@
       <p>When your team needs to kick off a project, hire a new employee, deploy some code, or review a sales contract.</p>
     </main>
 
+    <script>
+      document.querySelectorAll('.hambuyga')[0].addEventListener('click', (e) => {
+        e.preventDefault();
+        const nav = document.querySelectorAll('.navigation-lists')[0];
+        nav.classList.add('open');
+      });
+
+      document.querySelectorAll('.close')[0].addEventListener('click', (e) => {
+        e.preventDefault();
+        const nav = document.querySelectorAll('.navigation-lists')[0];
+        nav.classList.remove('open');
+      });
+    </script>
+
   </body>
 </html>
