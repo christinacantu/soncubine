@@ -64,7 +64,40 @@ nav {
 }
 
 .navigation-lists {
-  display: none;
+  @media (max-width: $medium) {
+    transform: translateX(100%);
+    transition: 0.5s transform ease;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 52px;
+    z-index: 1;
+    padding-top: 52px;
+    padding-left: 26px;
+    font-size: 1.125em;  //18px
+    line-height: 0.875em;  //14px
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+
+  .close {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+  }
+
+  a {
+    color: #000000;
+  }
+
+  li {
+    margin-bottom: 26px;
+  }
+
+  &.open {
+    transform: translateX(0);
+  }
 
   @media (min-width: $medium) {
     display: flex;
@@ -79,9 +112,14 @@ nav {
       display: inline-flex;
 
       li {
+        margin: 0;
         margin-right: 16px;
         font-size: 0.875em;  //14px
         line-height: 1;
+
+        a {
+          color: #ffffff;
+        }
       }
 
       &:last-child li:last-child {  //last li of last ul
