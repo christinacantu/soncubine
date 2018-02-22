@@ -103,14 +103,15 @@ nav {
   top: 26px;
   right: 26px; }
 
-.navigation-lists a {
-  color: #000000; }
-
 .navigation-lists li {
   margin-bottom: 26px; }
 
 .navigation-lists.open {
   transform: translateX(0); }
+  .navigation-lists.open a {
+    color: #000000; }
+    .navigation-lists.open a:hover {
+      color: rgba(0, 0, 0, 0.6); }
 
 @media (min-width: 768px) {
   .navigation-lists {
@@ -126,8 +127,6 @@ nav {
         margin-right: 16px;
         font-size: 0.875em;
         line-height: 1; }
-        .navigation-lists ul li a {
-          color: #ffffff; }
       .navigation-lists ul:last-child li:last-child {
         font-weight: 500; } }
 
